@@ -1,0 +1,38 @@
+\documentclass{article}
+
+\usepackage{blindtext}
+\title{\vspace{-5cm}Chapitre: Torseurs cinétiques et dynamiques}
+\author{Marc Partensky}
+\begin{document}
+\maketitle
+
+On constate que les efforts s'exerçant sur un solide sont égaux à la variation de la quantité de mouvement.
+
+\section{Rappel de la cinétique du ?}
+
+Pour P de masse m à vitesse \overrightarrow{V_{P}} dans R la quantité de mouvement est : \overrightarrow{\rho} = m*\overrightarrow{V_{P}}. \\
+
+Si P est en rotation autour de (Q,\overrightarrow{S}) pour le moment de la quantité de mouvement appelée moment cinétique.
+
+$$\overrightarrow{\Omega Q} = \overrightarrow{QP} \wedge m\overrightarrow{V_{P}}$$ \\
+
+Dans le cas des solides il faut sommer toutes les quantités de mouvement (et tous les moments cinétiques) de chaque point du solide considéré.\hfill\break
+
+\section{Torseur cinétique}
+Il est composé d'une résultante qui est la quantité de mouvement du solide S dans le mouvement par rapport à R et le moment cinétique et la quantité de mouvement:
+$$\overrightarrow{\rho_{S/R}}=\int_{S}\overrightarrow{V_{P\in S/R}} dm$$
+
+Par définition du centre de gravité:\\ $$m\overrightarrow{OG}=\int_{S}\overrightarrow{OP}\overrightarrow{dm}$$
+dérivation par rapport au temps:
+$$(\frac{d}{dt}m\overrightarrow{OG})_{R} = (\frac{d}{dt}\int_{S}\overrightarrow{OP}dm)_{R}$$ \\
+
+Hypothèse: il y a conservation de la masse:\\
+
+$$\Rightarrow m(\frac{d}{dt}\overrightarrow{OG})_{R} = \int{S}\frac{d\overrightarrow{OP}}{dt}dm$$
+
+$$\Leftrightarrow m\overrightarrow{V_{G\inS/R}} = \int_{S}\overrightarrow{V_{P\in{S/R}}}dm$$
+
+D'où: \overrightarrow{\rho_{S/R}} = m\overrightarrow{V_{G\in{S/R}}}
+
+S'il y'a conservation de la masse.
+\end{document}

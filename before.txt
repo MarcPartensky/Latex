@@ -1,0 +1,3 @@
+% #! /usr/bin/env pdflatex \catcode35=14 \input
+% \catcode`\#=6
+

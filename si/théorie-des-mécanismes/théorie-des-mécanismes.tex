@@ -1,0 +1,101 @@
+\documentclass{article}
+\usepackage{multicol}
+\usepackage[a4paper, portrait, margin=1in]{geometry}% \usepackage{color}
+\setlength{\columnseprule}{1pt}
+% \def\columnseprulecolor{\color{blue}}
+
+\begin{document}
+\title{\vspace{-3cm}Chapitre: Théorie des mécanismes}
+\author{Marc Partensky}
+\begin{document}
+\maketitle
+
+\section*{Objectifs:}
+Vérifier qu'un système est apte à réaliser les modifications de mouvements et/ou d'efforts voulues. \\
+
+Il s'agira donc: \\
+\begin{itemize}
+  \item de rechercher combien de paramètres sont nécessaires pour connnaître la position de tous les solides = MC (mobilité statique)
+  \item de rechercher les lois d'entrées-sorties
+  \item connaissant les efforts extérieures, peut-on déterminer  toutes les inconnues de liaison:
+  \begin{itemize}
+    \item si oui, le système est isostatique.
+    \item si non, le systeme est dit hyperstatique.
+    \item Quelle est l'incidence de l'hyperstatisme sur la géométrie du système? Comment modifier le système pour le rendre isostatique?
+    \ldots
+  \end{itemize}
+\end{itemize}
+
+
+
+\section*{Hypothèses:}
+\begin{itemize}
+  \item Tous les solides sont indéformables.
+  \item Toutes les liaisons sont parfaites ( pas de jeu et pas de frottements.)
+  \item Ces efforts dynamiques seronts négligés de telle sorte qu'on puisse appliquer le PFS.
+\end{itemize}
+
+\section{Graphe de structure}
+
+Rappel: Il y a autant de sommet que de solides dans le système et chaque sommet est relié aux autres s'il y'a une liaison.\\
+
+\underline{ex:}\\
+Image \\
+p = 6 sommets\\
+p = 6 solides\\
+p le nombre de solides\\
+et NL = Nombre de liaisons du système, ici NL=8\\
+
+Nombre cyclomatique: nombre de boucles indépendantes.\\
+$$\mu = NL-(p-1) = NL-p+1$$\\
+
+Dans l'exemple: \mu = 8-6-1 \Rightarrow boucles indépendantes.\\
+
+Image\\
+
+\section{Liaisons équivalentes}
+\subsection{liaisons équivalentes en //}
+
+Image \Leftrightarrow Image
+
+\subsubsection*{Méthode cinématique:}
+$$\{\nu_{2/1}^{L_{eq}}\} = \{\nu_{2/1}^{L_{1}}\} = \{\nu_{2/1}^{L_{2}}\} = ... = \{\nu_{2/1}^{L_{n}}\}$$ \\
+Tous les torseurs doivent être écrits au même point.
+
+\subsubsection*{Méthode statique}
+$$\{\tau_{2/1}^{L_{eq}}\} = \{\tau_{2/1}^{L_{1}}\} = \{\tau_{2/1}^{L_{2}}\} = ... = \{\tau_{2/1}^{L_{n}}\}$$ \\
+Tous les torseurs doivent être écrits au même point.
+
+\subsection{Liaison en série:}
+
+Image \Leftrightarrow Image
+
+\subsubsection{Méthode statique:}
+
+\begin{multicols}{2}
+$$\{\nu_{2/1}^{L_{eq}}\} = \{\nu_{2/1}^{L_{1}}\} = \{\nu_{2/1}^{L_{2}}\} = ... = \{\nu_{2/1}^{L_{n}}\}$$ \\
+Tous les torseurs sont écrits au même point. \\
+Composition des vitesses.
+
+\columnbreak
+
+$$\{\tau_{2/1}^{L_{eq}}\} = \{\tau_{2/1}^{L_{1}}\} = \{\tau_{2/1}^{L_{2}}\} = ... = \{\tau_{2/1}^{L_{n}}\}$$ \\
+Tous les torseurs sont écrits au même point. \\
+\end{multicols}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}
