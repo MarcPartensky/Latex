@@ -1,0 +1,61 @@
+\documentclass{article}
+
+\usepackage{multicol}
+\usepackage[a4paper, portrait, margin=1in]{geometry}% \usepackage{color}
+\setlength{\columnseprule}{1pt}
+
+\begin{document}
+\begin{document}
+\title{\vspace{-3cm}Chapitre: Cinématique}
+\author{Marc Partensky}
+\begin{document}
+\maketitle
+
+\section{Rappels Généraux}
+
+\subsection{Rappels}
+
+Solides indéformables \Leftrightarrow \forall A et B \in S
+\left\|{\overrightarrow{AB}}\right\| = cst \\
+
+On associera un repère à chaque solide
+
+\subsection{Définitions}
+
+Soit A apparetenant à un solide S1 en mouvement par rapport à un repère R_{O}(\overrightarrow{x}, \overrightarrow{y}, \overrightarrow{z}): \\
+
+$$* \overrightarrow{V_{A\inS/R_{O}}} = (\frac{d\overrightarrow{OA}}{dt})_{R_{0}} $$\\
+
+car O est fixe, dans R_{O} et A appartenant à S_{1} \\
+
+$$* \overrightarrow{\Gamma_{A\in{S_{1}/R_{0}}}} = (\frac{d}{dt}\overrightarrow{V_{A\in{S_{1}/R_{0}}}})_{R_{0}}$$ \\
+
+et par extension, \\
+
+$$ \overrightarrow{\Gamma_{A\in{S_{1}/R_{0}}}} = (\frac{d^2\overrightarrow{OA}}{dt^2})_{R_{0}}
+
+l'accélération est en ms^2\\
+
+\section{Dérivation vectorielle}
+
+Soit \overrightarrow{u} de R_{0}(\overrightarrow{x}, \overrightarrow{y}, \overrightarrow{z}) (repère orthonormé direct)\\
+
+$$ (\frac{d\vec{u}}{dt})_{R_{1}} = (\frac{d\vec{u}}{dt})_{R_{0}} = \overrightarrow{\Omega_{0/1}}\wedge\vec{u}
+
+Comme: \vec{u} \in R_{0},
+$$(\frac{d\vec{u}}{dt})_{R_{0}} = \vec{0}$$
+
+avec \overrightarrow{\Omega_{0/1}} Vecteur taux de rotation en rad/s \\
+\rightarrow il a pour norme la dérivée de la position angulaire entre les repères 0 et 1.\\
+\rightarrow il est parallèle à l'axe autour duquel le repère R_{0} tourne autour du repère R_{1}.\\
+\rightarrow il a pour sens le repère (\vec{x_{1}}, \vec{x_{0}}, \overrightarrow{\Omega_{0/1}}), soit direct.
+
+
+
+
+
+
+
+
+
+\end{document}
